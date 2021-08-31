@@ -1,0 +1,31 @@
+{
+  "register": {
+    "title": "Registro de usuario",
+    "userName": "Nombre de usuario",
+    "name": "Nombre",
+    "lastName": "Apellidos",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "repeteadPassword": "Repita la contraseña",
+    "registerBtn": "Registrarse",
+    "messages": {
+      "success1": "El usuario",
+      "success2": "ha sido registrado",
+      "error": "Ha ocurrido un error al registrar al usuario",
+      "userNameError": "El nombre de usuario",
+      "emailError": "El correo electrónico",
+      "exists": "ya existe"
+    }
+  },
+  "validations": {
+    "required": "Requerido",
+    "maxLength": "Tamaño máximo requerido 100 caracteres",
+    "validEmail": "La dirección de correo electrónico no es válida",
+    "samePassword": "Las contraseñas no coinciden"
+  },
+  "generic": {
+    "buttons": {
+      "back": "Volver"
+    }
+  }
+}

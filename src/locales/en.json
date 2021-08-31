@@ -1,0 +1,31 @@
+{
+  "register": {
+    "title": "Sign in",
+    "userName": "Username",
+    "name": "Name",
+    "lastName": "Lastname",
+    "email": "Email",
+    "password": "Password",
+    "repeteadPassword": "Repeat password",
+    "registerBtn": "Sign in",
+    "messages": {
+      "success1": "The user",
+      "success2": "has been registered",
+      "error": "An error occurred while registering the user",
+      "userNameError": "The username",
+      "emailError": "The email",
+      "exists": "already exists"
+    }
+  },
+  "validations": {
+    "required": "Required",
+    "maxLength": "Maximum required size 100 characters",
+    "validEmail": "Invalid email address",
+    "samePassword": "The passwords are not the same"
+  },
+  "generic": {
+    "buttons": {
+      "back": "Back"
+    }
+  }
+}
