@@ -1,13 +1,12 @@
 {
   "register": {
     "title": "Registro de usuario",
-    "userName": "Nombre de usuario",
-    "name": "Nombre",
-    "lastName": "Apellidos",
-    "email": "Correo electrónico",
-    "password": "Contraseña",
-    "repeteadPassword": "Repita la contraseña",
-    "registerBtn": "Registrarse",
+    "userName": "Nombre de usuario *",
+    "name": "Nombre *",
+    "lastName": "Apellidos *",
+    "email": "Correo electrónico *",
+    "password": "Contraseña *",
+    "repeteadPassword": "Repita la contraseña *",
     "messages": {
       "success1": "El usuario",
       "success2": "ha sido registrado",
@@ -15,6 +14,16 @@
       "userNameError": "El nombre de usuario",
       "emailError": "El correo electrónico",
       "exists": "ya existe"
+    }
+  },
+  "login": {
+    "title": "Bienvenido",
+    "username": "Nombre de usuario",
+    "password": "Contraseña",
+    "loginBtn": "Acceder",
+    "error": {
+      "credentials": "Credenciales incorrectas",
+      "generic": "Ha ocurrido un error al intentar acceder"
     }
   },
   "validations": {
@@ -25,7 +34,8 @@
   },
   "generic": {
     "buttons": {
-      "back": "Volver"
+      "back": "Volver",
+      "register": "Registrarse"
     }
   }
 }

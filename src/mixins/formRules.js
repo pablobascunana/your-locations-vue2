@@ -4,7 +4,7 @@ Vue.mixin({
   data() {
     return {
       formRules: {
-        // loginCredentials: true,
+        loginCredentials: true,
         required: value => !!value || this.$t('validations.required'),
         // cif: value => /^([ABCDEFGHJKLMNPQRSUVW])(\d{7})([0-9A-J])$/.test(value) || this.$t('validation.cif'),
         maxLength: value => value.length < 101 || this.$t('validations.maxLength'),
