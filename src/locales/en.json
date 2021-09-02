@@ -26,6 +26,20 @@
       "generic": "An error occurred while trying to log in"
     }
   },
+  "locations": {
+    "tableTitle": "Your locations",
+    "title": "Search and add a location",
+    "delete": "Delete location",
+    "success": {
+      "save": "Location has been saved",
+      "delete": "Location has been removed"
+    },
+    "error": {
+      "deleteGeneric": "An error occurred while deleting the location",
+      "getGeneric": "An error occurred while getting the locations",
+      "saveGeneric": "An error occurred while saving the location"
+    }
+  },
   "validations": {
     "required": "Required",
     "maxLength": "Maximum required size 100 characters",
@@ -34,7 +48,10 @@
   },
   "generic": {
     "buttons": {
+      "add": "Add",
       "back": "Back",
+      "delete": "Delete",
+      "exit": "Exit",
       "register": "Sign in"
     }
   }

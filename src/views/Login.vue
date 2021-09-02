@@ -1,17 +1,15 @@
 <template>
   <v-form ref="loginForm">
-    <v-card :elevation="0">
-      <v-card-title class="justify-center">{{ $t('login.title') }}</v-card-title>
-    </v-card>
+    <h1 class="text-center pb-12">{{ $t('login.title') }}</h1>
     <v-row class="justify-center">
       <v-col xl="4" lg="4" md="6" sm="6" cols="8">
         <v-text-field
-          id="userName" 
-          :label="$t('login.username')" 
+          id="userName"
+          :label="$t('login.username')"
           prepend-icon="mdi-email-outline"
           :rules="[formRules.loginCredentials]"
-          type="text" 
-          v-model="user.userName" 
+          type="text"
+          v-model="user.userName"
           @keyup.enter="doLogin"
         ></v-text-field>
       </v-col>
@@ -21,7 +19,7 @@
         <v-text-field
           id="password"
           autocomplete="off"
-          :label="$t('login.password')" 
+          :label="$t('login.password')"
           prepend-icon="mdi-lock-outline"
           :rules="[formRules.loginCredentials]"
           type="password" 
@@ -31,8 +29,8 @@
       </v-col>
     </v-row>
     <v-row class="justify-center mt-6">
-      <v-btn 
-        id="login" 
+      <v-btn
+        id="login"
         @click.prevent="doLogin"
         :elevation="0"
       >{{ $t('login.loginBtn') }}

@@ -2,7 +2,9 @@ function initialApplicationState() {
   return {
     isLogin: true,
     accessToken: undefined,
-    refreshToken: undefined
+    refreshToken: undefined,
+    addLocationDialogVisible: false,
+    removeLocationDialogVisible: false
   }
 }
 
@@ -24,9 +26,15 @@ const application = {
     },
     setRefreshToken(state, token) {
       state.refreshToken = token;
+    },
+    isAddLocationDialogVisible(state, visible) {
+      state.addLocationDialogVisible = visible;
+    },
+    isRemoveLocationDialogVisible(state, visible) {
+      state.removeLocationDialogVisible = visible
     }
   }
 };
-  
+
 export default application;
   

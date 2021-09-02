@@ -99,12 +99,12 @@ export default {
     return {
       isFormRegisterValid: false,
       user: {
-        userName: 'pablascu',
-        name: 'Pablo',
-        lastName: 'Bascuñana',
-        email: 'youmldevelop@gmail.com',
-        password: '1234',
-        repeteadPassword: '1234',
+        userName: '',
+        name: '',
+        lastName: '',
+        email: '',
+        password: '',
+        repeteadPassword: '',
       },
       showPassword: false,
       showRepeatedPassword: false

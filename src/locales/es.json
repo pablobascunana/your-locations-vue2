@@ -26,6 +26,20 @@
       "generic": "Ha ocurrido un error al intentar acceder"
     }
   },
+  "locations": {
+    "tableTitle": "Tus localizaciones",
+    "title": "Busca y añade una localización",
+    "delete": "Eliminar localización",
+    "success": {
+      "save": "Se ha guardado la localización",
+      "delete": "Se ha eliminado la localización"
+    },
+    "error": {
+      "deleteGeneric": "Ha ocurrido un error al eliminar la locacalización",
+      "getGeneric": "Ha ocurrido un error al obtener las localizaciones",
+      "saveGeneric": "Ha ocurrido un error al guardar la localización"
+    }
+  },
   "validations": {
     "required": "Requerido",
     "maxLength": "Tamaño máximo requerido 100 caracteres",
@@ -34,7 +48,10 @@
   },
   "generic": {
     "buttons": {
+      "add": "Añadir",
       "back": "Volver",
+      "delete": "Eliminar",
+      "exit": "Salir",
       "register": "Registrarse"
     }
   }
