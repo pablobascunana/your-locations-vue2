@@ -11,6 +11,7 @@
           </gmap-autocomplete>
         </v-col>
         <v-btn
+          color="primary"
           @click="addMarker"
         >{{ $t('generic.buttons.add' )}}
         </v-btn>

@@ -1,6 +1,7 @@
 <template>
   <v-app id="app">
     <v-main>
+      <AppBar v-if="!isLogin"></AppBar>
       <v-container fill-height> 
         <v-row>
           <v-col cols="12">
@@ -13,16 +14,23 @@
           v-if="showSnackBar"
           @close="snackBarHandler">
         </SnackBar>
+        <LogoutDialog></LogoutDialog>
       </v-container>
     </v-main>
   </v-app>
 </template>
 
 <script>
+import { mapState } from 'vuex';
 export default {
   name: 'app',
   components: {
-    SnackBar: () => import('@/components/wrappers/SnackBar')
+    AppBar: () => import('@/components/AppBar'),
+    SnackBar: () => import('@/components/wrappers/SnackBar'),
+    LogoutDialog: () => import('@/components/dialogs/Logout')
+  },
+  computed: {
+    ...mapState('application', ['isLogin'])
   },
   mounted() {
     this.EventBus.$on('showSnackBar', (data) => {

@@ -1,4 +1,7 @@
 {
+  "appBar": {
+    "welcome": "Welcome"
+  },
   "register": {
     "title": "Sign in",
     "userName": "Username *",
@@ -30,6 +33,7 @@
     "tableTitle": "Your locations",
     "title": "Search and add a location",
     "delete": "Delete location",
+    "confirmMessage": "Are you sure to delete the location",
     "success": {
       "save": "Location has been saved",
       "delete": "Location has been removed"
@@ -39,6 +43,10 @@
       "getGeneric": "An error occurred while getting the locations",
       "saveGeneric": "An error occurred while saving the location"
     }
+  },
+  "logout": {
+    "title": "Exit application",
+    "message": "¿Are you sure do you want to log out?"
   },
   "validations": {
     "required": "Required",

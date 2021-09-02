@@ -31,8 +31,9 @@
     <v-row class="justify-center mt-6">
       <v-btn
         id="login"
-        @click.prevent="doLogin"
+        color="primary"
         :elevation="0"
+        @click.prevent="doLogin"
       >{{ $t('login.loginBtn') }}
       </v-btn>
     </v-row>
@@ -74,6 +75,7 @@ export default {
       this.$store.commit('application/setAccessToken', loginResponse.access_token);
       this.$store.commit('application/setRefreshToken', loginResponse.refresh_token);
       this.$store.commit('application/isLogin', false);
+      this.$store.commit('user/setUserName', this.user.userName);
       this.$router.push({ name: 'locations' });
     },
     goToRegister() {

@@ -1,5 +1,6 @@
 function initialUserState() {
   return {
+    userName: String,
     userUuid: undefined
   }
 }
@@ -19,6 +20,9 @@ const user = {
       let base64 = base64url.replace('-', '+').replace('_', '/');
       let claims = JSON.parse(window.atob(base64));
       state.userUuid = claims.session.userUuid;
+    },
+    setUserName(state, userName) {
+      state.userName = userName;
     }
   }
 };

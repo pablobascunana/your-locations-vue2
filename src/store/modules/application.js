@@ -4,7 +4,8 @@ function initialApplicationState() {
     accessToken: undefined,
     refreshToken: undefined,
     addLocationDialogVisible: false,
-    removeLocationDialogVisible: false
+    removeLocationDialogVisible: false,
+    logoutDialogVisible: false
   }
 }
 
@@ -32,6 +33,9 @@ const application = {
     },
     isRemoveLocationDialogVisible(state, visible) {
       state.removeLocationDialogVisible = visible
+    },
+    isLogoutDialogVisible(state, visible) {
+      state.logoutDialogVisible = visible;
     }
   }
 };

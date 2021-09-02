@@ -76,11 +76,13 @@
           id="back" 
           :elevation="0"
           :ripple="false"
+          text
           @click.prevent="goToLogin"
         >{{ $t('generic.buttons.back') }}
         </v-btn>
         <v-btn
           id="register"
+          color="primary"
           :disabled="!isFormRegisterValid"
           :elevation="0"
           @click.prevent="doRegister"

@@ -1,4 +1,7 @@
 {
+  "appBar": {
+    "welcome": "Bienvenido"
+  },
   "register": {
     "title": "Registro de usuario",
     "userName": "Nombre de usuario *",
@@ -30,6 +33,7 @@
     "tableTitle": "Tus localizaciones",
     "title": "Busca y añade una localización",
     "delete": "Eliminar localización",
+    "confirmMessage": "¿Está seguro de eliminar la localización",
     "success": {
       "save": "Se ha guardado la localización",
       "delete": "Se ha eliminado la localización"
@@ -39,6 +43,10 @@
       "getGeneric": "Ha ocurrido un error al obtener las localizaciones",
       "saveGeneric": "Ha ocurrido un error al guardar la localización"
     }
+  },
+  "logout": {
+    "title": "Salir de la aplicación",
+    "message": "¿Está seguro de que quiere salir de la aplicación?"
   },
   "validations": {
     "required": "Requerido",
