@@ -15,7 +15,7 @@ Vue.prototype.EventBus = new Vue;
 
 Vue.use(VueGoogleMaps, {
   load: {
-    key: '',
+    key: process.env.VUE_APP_GOOGLE_MAPS_API_KEY,
     libraries: 'places',
   }
 });
