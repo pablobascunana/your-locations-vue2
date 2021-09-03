@@ -92,16 +92,22 @@ export default {
       try {
         const body = { markers: markersCopy, userId: this.userUuid };
         let { data } = await Api.saveLocation(this.userUuid, body);
-        this.EventBus.$emit('showSnackBar', { 
-          snackBarMessage: this.$t('locations.success.save'),
-        });
-        this.markers.push(data.markers.at(-1));
+        this.showSuccessSnackBarAndAddMarker(data.markers);
       } catch(error) {
-        this.EventBus.$emit('showSnackBar', { 
-          snackBarMessage: this.$t('locations.error.saveGeneric'),
-          snackBarColor: 'error'
-        });
+        
       }
+    },
+    showSuccessSnackBarAndAddMarker(marker) {
+      this.EventBus.$emit('showSnackBar', { 
+        snackBarMessage: this.$t('locations.success.save'),
+      });
+      this.markers.push(marker.at(-1));
+    },
+    showErrorSnackBar() {
+      this.EventBus.$emit('showSnackBar', { 
+        snackBarMessage: this.$t('locations.error.saveGeneric'),
+        snackBarColor: 'error'
+      });
     }
   }
 }

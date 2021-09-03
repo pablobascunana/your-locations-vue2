@@ -48,7 +48,7 @@ describe('RemoveLocation', () => {
         });
     });
 
-    it("should match snapshot", () => {
+    it("Should match snapshot", () => {
         expect(wrapper).toMatchSnapshot()    
     });
 

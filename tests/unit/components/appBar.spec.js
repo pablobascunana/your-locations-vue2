@@ -30,20 +30,13 @@ describe('AppBar', () => {
             localVue,
             vuetify,
             store,
-            data() {
-                return {
-                    user: {
-                        userName: "test"
-                    }
-                }
-            },
             mocks: {
                 $t: () => {'some specific text in any language'}
             }
         });
     });
 
-    it("should match snapshot", () => {
+    it("Should match snapshot", () => {
         expect(wrapper).toMatchSnapshot()    
     });
 

@@ -25,7 +25,7 @@ describe('Register', () => {
         });
     });
 
-    it("should match snapshot", () => {
+    it("Should match snapshot", () => {
         expect(wrapper).toMatchSnapshot()    
     });
 

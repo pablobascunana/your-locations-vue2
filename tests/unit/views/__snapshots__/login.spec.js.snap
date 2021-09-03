@@ -1,5 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Login Should match snapshot 1`] = `
+<v-form>
+  <h1 class="text-center pb-12"></h1>
+  <v-row class="justify-center">
+    <v-col xl="4" lg="4" md="6" sm="6" cols="8">
+      <v-text-field id="userName" prepend-icon="mdi-email-outline" rules="true" type="text"></v-text-field>
+    </v-col>
+  </v-row>
+  <v-row class="justify-center">
+    <v-col xl="4" lg="4" md="6" sm="6" cols="8">
+      <v-text-field id="password" autocomplete="off" prepend-icon="mdi-lock-outline" rules="true" type="password"></v-text-field>
+    </v-col>
+  </v-row>
+  <v-row class="justify-center mt-6">
+    <v-btn id="login" color="primary" elevation="0">
+    </v-btn>
+  </v-row>
+  <v-row class="justify-center mt-12"><a id="register" text="">
+    </a></v-row>
+</v-form>
+`;
+
 exports[`Login should match snapshot 1`] = `
 <v-form>
   <h1 class="text-center pb-12"></h1>
