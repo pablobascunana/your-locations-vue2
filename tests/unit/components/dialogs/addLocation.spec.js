@@ -11,7 +11,7 @@ const localVue = createLocalVue();
 localVue.use(Vuex);
 let vuetify = new Vuetify();
 
-describe('Login', () => {
+describe('AddLocation', () => {
     let wrapper;
     let store;
     let state = {};
@@ -40,7 +40,7 @@ describe('Login', () => {
         expect(wrapper.isVueInstance()).toBe(true);
     });
 
-    it('Call to close dialog', () => {
+    it('Call to close dialog function', () => {
         const closeDialogFn = jest.spyOn(wrapper.vm, 'closeDialog');
         wrapper.vm.closeDialog();
         expect(closeDialogFn).toBeCalled();

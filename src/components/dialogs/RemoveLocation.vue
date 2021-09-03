@@ -44,15 +44,21 @@ export default {
     async deleteLocation() {
       try {
         let { data } = await Api.deleteLocation(this.userUuid, this.marker);
-        this.$emit('updateMarkers', data.markers);
-        this.closeDialog();
+        this.updateMarkersAndCloseDialog(data.markers);
       } catch (error) {
-        this.EventBus.$emit('showSnackBar', { 
-          snackBarMessage: this.$t('locations.error.deleteGeneric'),
-          snackBarColor: 'error'
-        });
-        this.closeDialog();
+        this.showErrorSnackBarAndCloseDialog
       }
+    },
+    updateMarkersAndCloseDialog(markers) {
+      this.$emit('updateMarkers', markers);
+      this.closeDialog();
+    },
+    showErrorSnackBarAndCloseDialog() {
+      this.EventBus.$emit('showSnackBar', { 
+        snackBarMessage: this.$t('locations.error.deleteGeneric'),
+        snackBarColor: 'error'
+      });
+      this.closeDialog();
     },
     closeDialog() {
       this.$store.commit('application/isRemoveLocationDialogVisible', false);
