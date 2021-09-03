@@ -4,8 +4,6 @@ import Vuetify from 'vuetify'
 
 import LocationsMap from '@/components/LocationsMap.vue'
 
-import * as historicalLocationsMock from '../mocks/historicalLocations.mock.js'
-
 const Plugins = {
     install(Vue) {
       Vue.prototype.EventBus = new Vue();
@@ -32,7 +30,7 @@ const mockGeolocation = {
 
 navigator.geolocation = mockGeolocation;
 
-describe('LocationsMap', () => {
+describe('Locations Map', () => {
     let wrapper;
     const mocks = {
         EventBus: {
