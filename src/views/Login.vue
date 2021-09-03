@@ -65,12 +65,12 @@ export default {
     async doLogin() {
       try {
         let { data } = await Api.login(this.user);
-        this.setStoreAndGoToLocationsMap(data);
+        this.setStoreAndGoToHistoricalLocations(data);
       } catch(error) {
         this.checkWhatErrorIs(error.response.status);
       }
     },
-    setStoreAndGoToLocationsMap(loginResponse) {
+    setStoreAndGoToHistoricalLocations(loginResponse) {
       this.$store.commit('user/setUserByToken', loginResponse.access_token);
       this.$store.commit('application/setAccessToken', loginResponse.access_token);
       this.$store.commit('application/setRefreshToken', loginResponse.refresh_token);

@@ -1,0 +1,11 @@
+export const USER_DATA = {
+    "userName": "test",
+    "password": "secretPassword"
+}
+
+export const LOGIN_RESPONSE = {
+    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJmcmVzaCI6dHJ1ZSwiaWF0IjoxNjMwNjYyODkwLCJqdGkiOiIyYzg1M2U5ZC00YWM4LTQxMDktOGQ5NS1kMmE4MzgxZDQ1MGEiLCJ0eXBlIjoiYWNjZXNzIiwic2Vzc2lvbiI6eyJ1c2VyVXVpZCI6IjYxMzFmMGVhMjgxMzBmZmZjYjU1ZWRmYyJ9LCJuYmYiOjE2MzA2NjI4OTAsImV4cCI6MTYzMDY2Mzc5MH0.UEppUlcHLDLVdht9tm-GN056jV_hYGa-M-2HptLTdWdcg1W9HfsLD5-_jkr8urD_QEQbiIofmOxtWMI1iCH-N",
+    "response_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzMDY2Mjg5MCwianRpIjoiNzMyNTEwMjYtMDY4YS00OWMwLTk1Y2MtZjgzMWMzMzViNWUzIiwidHlwZSI6InJlZnJlc2giLCJzZXNzaW9uIjpudWxsLCJuYmYiOjE2MzA2NjI4OTAsImV4cCI6MTYzMzI1NDg5MH0.vjJCEUIpFvAnz2EN2P3FBY6W8DaWwWWbUujgPDFl-aCxpeORwfZcO24Qx2R72OrHf5P9gKbfJXYHoEkfe4UDAw"
+}
+
+export const USER_ID = "6131f0ea28130fffcb55edfc";
