@@ -4,6 +4,8 @@ import Vuex from 'vuex'
 
 import user from '@/store/modules/user.js'
 
+import '@/api/interceptors'
+
 import HistoricalLocations from '@/views/HistoricalLocations.vue'
 
 import * as historicalLocationsMock from '../mocks/historicalLocations.mock.js'

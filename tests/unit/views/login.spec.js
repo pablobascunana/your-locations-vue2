@@ -1,13 +1,13 @@
 import { createLocalVue, shallowMount } from '@vue/test-utils'
 
-import VueRouter from 'vue-router'
 import Vuetify from 'vuetify'
-import Vuex from 'vuex'
 
-import application from '@/store/modules/application.js'
-import user from '@/store/modules/user.js'
+import store from '@/store/index.js'
+import router from '@/router/index.js'
 
+import '@/api/interceptors'
 import '@/mixins/formRules'
+
 import Login from '@/views/Login.vue'
 
 import * as loginMock from '../mocks/login.mock.js'
@@ -20,21 +20,11 @@ const Plugins = {
 
 const localVue = createLocalVue();
 localVue.use(Plugins);
-localVue.use(VueRouter);
-localVue.use(Vuex);
-const router = new VueRouter();
 let vuetify = new Vuetify();
 
 
 describe('Login', () => {
     let wrapper;
-    let store;
-    let state = {};
-    let actions = {};
-    let modules = {
-        application,
-        user
-    };
     const mocks = {
         EventBus: {
             $on: jest.fn(),
@@ -44,8 +34,6 @@ describe('Login', () => {
         $t: () => {'some specific text in any language'}
     };
     beforeEach(() => {
-        store = new Vuex.Store({ state, actions, modules });
-
         wrapper = shallowMount(Login, {
             localVue,
             vuetify,
