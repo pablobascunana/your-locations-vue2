@@ -6,7 +6,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
+    "test:unit-debug": "node --inspect-brk node_modules/.bin/vue-cli-service test:unit --no-cache --watch --runInBand",
     "test:e2e": "vue-cli-service test:e2e",
+    "test": "jest --coverage",
     "lint": "vue-cli-service lint",
     "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/locales/**/*.json\""
   },
@@ -35,6 +37,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-plugin-vue": "^6.2.2",
+    "jest-html-reporters": "^2.1.6",
     "node-sass": "^4.12.0",
     "sass-loader": "^8.0.2",
     "vue-cli-plugin-i18n": "~2.1.3",
@@ -78,6 +81,24 @@
     "not ie <= 10"
   ],
   "jest": {
-    "preset": "@vue/cli-plugin-unit-jest"
+    "preset": "@vue/cli-plugin-unit-jest",
+    "collectCoverage": true,
+    "collectCoverageFrom": ["src/**/*.{js,vue}"],
+    "coverageDirectory": "./tests/unit/coverage",
+    "coveragePathIgnorePatterns": ["/node_modules/"],
+    "reporters": [
+      "default",
+      [
+        "jest-html-reporters", 
+        {
+          "pageTitle": "Your location unit test reports",
+          "hideIcon": true,
+          "publicPath": "./tests/unit/html-reports",
+          "filename": "your-location-unit-test-reporters.html",
+          "expand": true,
+          "openReport": true
+        }
+      ]
+    ]
   }
 }
