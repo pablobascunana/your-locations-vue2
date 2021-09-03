@@ -52,7 +52,7 @@ export default {
     },
     snackBarHandler() {
       this.showSnackBar = false;
-    },
+    }
   }
 }
 </script>

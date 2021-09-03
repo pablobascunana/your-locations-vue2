@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should match snapshot 1`] = `
+<v-app id="app">
+  <v-main>
+    <!---->
+    <v-container fill-height="">
+      <v-row>
+        <v-col cols="12">
+          <router-view></router-view>
+        </v-col>
+      </v-row>
+      <!---->
+      <v-dialog max-width="500px">
+        <v-card>
+          <v-card-title>
+
+            <v-spacer></v-spacer>
+            <v-icon aria-label="Close">mdi-close</v-icon>
+          </v-card-title>
+          <v-card-text class="text-center mt-10">
+            <p></p>
+          </v-card-text>
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn id="logout" color="primary" text="">
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
+    </v-container>
+  </v-main>
+</v-app>
+`;
