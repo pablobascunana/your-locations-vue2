@@ -82,7 +82,7 @@ describe('Login', () => {
         expect(button.attributes().disabled).toBe(undefined);
     });
 
-    it('Call to set store and go to historical locations', () => {
+    it('Call to set store and go to historical locations function', () => {
         const setStoreAndGoToHistoricalLocationsFn = jest.spyOn(wrapper.vm, 'setStoreAndGoToHistoricalLocations');
         wrapper.vm.setStoreAndGoToHistoricalLocations(loginMock.LOGIN_RESPONSE);
         expect(setStoreAndGoToHistoricalLocationsFn).toBeCalled();
@@ -93,7 +93,7 @@ describe('Login', () => {
         expect(wrapper.vm.$store.state.user.userName).toBe(loginMock.USER_DATA.userName);
     });
 
-    it('Call to check what error is', () => {
+    it('Call to check what error is function', () => {
         wrapper.vm.$refs.loginForm.validate = () => true;
         const checkWhatErrorIsFn = jest.spyOn(wrapper.vm, 'checkWhatErrorIs');
         wrapper.vm.checkWhatErrorIs(401);

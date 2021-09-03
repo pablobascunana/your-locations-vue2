@@ -33,7 +33,7 @@ export default {
   methods: {
     logout() {
       this.closeDialog();
-      this.$store.commit('application/isLogin', false);
+      this.$store.commit('application/isLogin', true);
       this.$store.commit('resetStore');
       this.$router.push({ name: 'login' });
     },

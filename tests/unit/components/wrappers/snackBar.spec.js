@@ -25,7 +25,7 @@ describe('App', () => {
         expect(wrapper.isVueInstance()).toBe(true);
     });
 
-    it('Call to close snackBar', () => {
+    it('Call to close snackBar function', () => {
         const closeSnackBarFn = jest.spyOn(wrapper.vm, 'closeSnackBar');
         jest.useFakeTimers();
         wrapper.vm.closeSnackBar();

@@ -52,13 +52,13 @@ describe('Historical locations', () => {
         expect(wrapper.isVueInstance()).toBe(true);
     });
 
-    it('Call to show error snack bar', () => {
+    it('Call to show error snack bar function', () => {
         const showErrorSnackBarFn = jest.spyOn(wrapper.vm, 'showErrorSnackBar');
         wrapper.vm.showErrorSnackBar(500);
         expect(showErrorSnackBarFn).toBeCalled();
     });
 
-    it('Call to update markers handler', () => {
+    it('Call to update markers handler function', () => {
         const updateMarkersHandlerFn = jest.spyOn(wrapper.vm, 'updateMarkersHandler');
         wrapper.vm.updateMarkersHandler(historicalLocationsMock.MARKER);
         expect(updateMarkersHandlerFn).toBeCalled();
