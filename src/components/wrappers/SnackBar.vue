@@ -21,10 +21,15 @@ export default {
     }
   },
   mounted() {
-    setTimeout(() => {
-      this.showSnackBar = false;
-      this.$emit('close');
-    }, 8000);
+    this.closeSnackBar();
+  },
+  methods: {
+    closeSnackBar() {
+      setTimeout(() => {
+        this.showSnackBar = false;
+        this.$emit('close');
+      }, 8000);
+    }
   }
 }
 </script>
