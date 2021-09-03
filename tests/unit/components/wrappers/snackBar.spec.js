@@ -26,9 +26,11 @@ describe('App', () => {
     });
 
     it('Call to close snackBar', () => {
+        const closeSnackBarFn = jest.spyOn(wrapper.vm, 'closeSnackBar');
         jest.useFakeTimers();
         wrapper.vm.closeSnackBar();
         jest.advanceTimersByTime(8000);
+        expect(closeSnackBarFn).toBeCalled();
         expect(wrapper.vm.showSnackBar).toBe(false);
     });
 });

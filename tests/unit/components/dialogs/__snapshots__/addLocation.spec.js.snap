@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login should match snapshot 1`] = `
+<v-dialog max-width="90%">
+  <v-card>
+    <v-card-title>
+      <v-spacer></v-spacer>
+      <v-icon aria-label="Close">mdi-close</v-icon>
+    </v-card-title>
+    <v-card-text class="pt-0 pb-0">
+      <locationsmap-stub markers=""></locationsmap-stub>
+    </v-card-text>
+    <v-card-actions>
+      <v-spacer></v-spacer>
+      <v-btn color="primary" text="">
+      </v-btn>
+    </v-card-actions>
+  </v-card>
+</v-dialog>
+`;
