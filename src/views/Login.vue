@@ -38,13 +38,13 @@
       </v-btn>
     </v-row>
     <v-row class="justify-center mt-12">
-      <a
-        id="register"
+      <v-btn
+        id="register2"
         :ripple="false"
         text
-        @click="goToRegister"
+        @click="goToRegister()"
       >{{ $t('generic.buttons.register') }}
-      </a>
+      </v-btn>
     </v-row>
   </v-form>
 </template>
