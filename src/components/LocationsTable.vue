@@ -10,6 +10,7 @@
           <v-toolbar-title>{{ $t('locations.tableTitle') }}</v-toolbar-title>
           <v-spacer></v-spacer>
           <v-btn
+            id="showAddLocation"
             color="primary"
             dark
             @click="addLocation"
@@ -21,6 +22,7 @@
         <v-tooltip left>
           <template v-slot:activator="{ on }">
             <v-icon
+              id="deleteLocation"
               small
               v-on="on"
               @click="deleteLocation(item)"

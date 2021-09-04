@@ -19,4 +19,5 @@ import './commands'
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 import './tasks/login'
+import './tasks/historicalLocations'
 import './tasks/register'

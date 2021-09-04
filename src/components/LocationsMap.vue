@@ -5,12 +5,14 @@
       <v-row class="justify-center">
         <v-col xl="10" lg="10" md="8" sm="8" xs="8">
           <gmap-autocomplete
+            id="searchLocation"
             class="autocomplete_input"
             @place_changed="setPlace"
             @keyup.enter="addMarker">
           </gmap-autocomplete>
         </v-col>
         <v-btn
+          id="addLocation"
           color="primary"
           @click="addMarker"
         >{{ $t('generic.buttons.add' )}}

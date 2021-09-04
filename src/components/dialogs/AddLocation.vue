@@ -3,7 +3,7 @@
     <v-card>
       <v-card-title>
         <v-spacer></v-spacer>
-        <v-icon aria-label="Close" @click="closeDialog()">mdi-close</v-icon>
+        <v-icon id="close" aria-label="Close" @click="closeDialog()">mdi-close</v-icon>
       </v-card-title>
       <v-card-text class="pt-0 pb-0">
         <LocationsMap :markers="markers" :userUuid="userUuid"></LocationsMap>
@@ -11,6 +11,7 @@
       <v-card-actions>
         <v-spacer></v-spacer>
         <v-btn
+          id="exit"
           color="primary"
           text
           @click="closeDialog()"

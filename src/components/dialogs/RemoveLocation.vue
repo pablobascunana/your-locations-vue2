@@ -4,7 +4,7 @@
       <v-card-title>
         {{ $t('locations.delete') }}
         <v-spacer></v-spacer>
-        <v-icon aria-label="Close" @click="closeDialog()">mdi-close</v-icon>
+        <v-icon id="close" aria-label="Close" @click="closeDialog()">mdi-close</v-icon>
       </v-card-title>
       <v-card-text class="pt-0 pb-0 text-center">
         <p>{{ $t('locations.confirmMessage') }}<span class="font-weight-bold"> {{ marker.title }}</span>?</p>
@@ -12,12 +12,7 @@
       <v-card-actions>
         <v-spacer></v-spacer>
         <v-btn
-          color="primary"
-          text
-          @click="closeDialog()"
-        >{{ $t('generic.buttons.exit')}}
-        </v-btn>
-        <v-btn
+          id="removeLocation"
           color="red"
           text
           @click="deleteLocation()"
