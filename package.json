@@ -95,7 +95,7 @@
           "hideIcon": true,
           "publicPath": "./tests/unit/html-reports",
           "filename": "your-location-unit-test-reporters.html",
-          "expand": true,
+          "expand": false,
           "openReport": true
         }
       ]

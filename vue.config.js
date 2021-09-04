@@ -6,5 +6,12 @@ module.exports = {
       localeDir: 'locales',
       enableInSFC: true
     }
-  }
+  },
+  devServer: {
+    overlay: {
+      warnings: true,
+      errors: true
+    }
+  },
+  transpileDependencies: ['/node_modules/']
 }

@@ -7,7 +7,6 @@ import i18n from './i18n'
 import * as VueGoogleMaps from 'vue2-google-maps'
 
 import '@/api/interceptors'
-import '@babel/polyfill'
 import '@/mixins/formRules'
 
 Vue.config.productionTip = false

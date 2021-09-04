@@ -94,7 +94,7 @@ export default {
         let { data } = await Api.saveLocation(this.userUuid, body);
         this.showSuccessSnackBarAndAddMarker(data.markers);
       } catch(error) {
-        
+        this.showErrorSnackBar();
       }
     },
     showSuccessSnackBarAndAddMarker(marker) {
