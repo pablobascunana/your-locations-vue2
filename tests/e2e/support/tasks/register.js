@@ -1,4 +1,4 @@
-const register = require('../constants/register')
+const register = require('../constants/register');
 
 Cypress.Commands.add("fillRegisterForm", (user) => {
     cy.get(register.INPUT_USER_USERNAME).clear().type(user.userName);

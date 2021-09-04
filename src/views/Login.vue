@@ -39,7 +39,7 @@
     </v-row>
     <v-row class="justify-center mt-12">
       <v-btn
-        id="register2"
+        id="register"
         :ripple="false"
         text
         @click="goToRegister()"

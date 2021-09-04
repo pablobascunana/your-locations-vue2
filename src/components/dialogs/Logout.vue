@@ -4,7 +4,7 @@
       <v-card-title>
         {{ $t('logout.title') }}
         <v-spacer></v-spacer>
-        <v-icon aria-label="Close" @click="closeDialog()">mdi-close</v-icon>
+        <v-icon id="close" aria-label="Close" @click="closeDialog()">mdi-close</v-icon>
       </v-card-title>
       <v-card-text class="text-center mt-10">
         <p>{{ $t('logout.message') }}</p>
@@ -12,7 +12,7 @@
       <v-card-actions>
         <v-spacer></v-spacer>
         <v-btn 
-          id="logout" 
+          id="dialogLogout" 
           color="primary"
           text
           @click="logout" 

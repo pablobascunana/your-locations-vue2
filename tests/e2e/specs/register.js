@@ -1,5 +1,5 @@
-const login = require('../support/constants/login')
-const register = require('../support/constants/register')
+const login = require('../support/constants/login');
+const register = require('../support/constants/register');
 
 describe('Register Test', () => {
 
