@@ -7,36 +7,14 @@ exports[`Historical locations Should match snapshot 1`] = `
     <v-card>
       <v-card-title>
         <v-spacer></v-spacer>
-        <v-icon aria-label="Close">mdi-close</v-icon>
+        <v-icon id="close" aria-label="Close">mdi-close</v-icon>
       </v-card-title>
       <v-card-text class="pt-0 pb-0">
         <locationsmap-stub markers=""></locationsmap-stub>
       </v-card-text>
       <v-card-actions>
         <v-spacer></v-spacer>
-        <v-btn color="primary" text="">
-        </v-btn>
-      </v-card-actions>
-    </v-card>
-  </v-dialog>
-</div>
-`;
-
-exports[`Historical locations should match snapshot 1`] = `
-<div>
-  <locationstable-stub markers=""></locationstable-stub>
-  <v-dialog max-width="90%">
-    <v-card>
-      <v-card-title>
-        <v-spacer></v-spacer>
-        <v-icon aria-label="Close">mdi-close</v-icon>
-      </v-card-title>
-      <v-card-text class="pt-0 pb-0">
-        <locationsmap-stub markers=""></locationsmap-stub>
-      </v-card-text>
-      <v-card-actions>
-        <v-spacer></v-spacer>
-        <v-btn color="primary" text="">
+        <v-btn id="exit" color="primary" text="">
         </v-btn>
       </v-card-actions>
     </v-card>

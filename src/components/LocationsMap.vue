@@ -78,9 +78,9 @@ export default {
         const markersCopy = [...this.markers]
         markersCopy.push({ position: marker, title: this.currentPlace.name });
         this.center = marker;
-        this.currentPlace = null;
         this.saveLocation(markersCopy);
       }
+      this.currentPlace = null;
     },
     geolocate() {
       navigator.geolocation.getCurrentPosition(position => {
@@ -99,14 +99,14 @@ export default {
         this.showErrorSnackBar();
       }
     },
-    showSuccessSnackBarAndAddMarker(marker) {
+    showSuccessSnackBarAndAddMarker(markers) {
       this.EventBus.$emit('showSnackBar', { 
         snackBarMessage: this.$t('locations.success.save'),
       });
-      this.markers.push(marker.at(-1));
+      this.$emit('updateMarkers', markers);
     },
     showErrorSnackBar() {
-      this.EventBus.$emit('showSnackBar', { 
+      this.EventBus.$emit('showSnackBar', {
         snackBarMessage: this.$t('locations.error.saveGeneric'),
         snackBarColor: 'error'
       });

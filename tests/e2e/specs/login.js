@@ -1,6 +1,6 @@
 const login = require('../support/constants/login');
 
-describe('Register Test', () => {
+describe('Login Test', () => {
 
   it('Do incorrect username login', () => {
     cy.visit(login.ROUTE_LOGIN);
@@ -20,7 +20,6 @@ describe('Register Test', () => {
     cy.intercept(login.URL_LOGIN, (req) => {
       req.reply((response) => {
         expect(response.statusCode).to.equal(401);
-        debugger
         expect(response.body.message).contains("Bad credentials");
       });
     });

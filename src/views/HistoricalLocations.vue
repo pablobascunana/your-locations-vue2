@@ -3,11 +3,12 @@
     <LocationsTable
       :markers="markers"
       :userUuid="userUuid"
-      @updateMarkers="updateMarkersHandler"
+      @updateMarkers="removeMarkersHandler"
     ></LocationsTable>
     <AddLocationDialog
       :markers="markers"
       :userUuid="userUuid"
+      @updateMarkers="addMarkersHandler"
     ></AddLocationDialog>
   </div>
 </template>
@@ -35,7 +36,7 @@ export default {
   },
   methods: {
     async getLocations() {
-      try{
+      try {
         let { data } = await Api.getLocations(this.userUuid);
         this.markers = data.markers;
       } catch (error) {
@@ -50,7 +51,13 @@ export default {
         });
       }
     },
-    updateMarkersHandler(markers) {
+    removeMarkersHandler(markers) {
+      this.updateMarkers(markers);
+    },
+    addMarkersHandler(markers) {
+      this.updateMarkers(markers);
+    },
+    updateMarkers(markers) {
       this.markers = markers;
     }
   }

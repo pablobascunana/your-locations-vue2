@@ -19,5 +19,9 @@ export const INPUT_SEARCH_LOCATION = '#searchLocation';
 export const AUTOCOMPLETE = '.pac-item';
 
 // Remove location dialog
-// export const BUTTON_CLOSE_DIALOG = '#close';
 export const BUTTON_REMOVE_LOCATION = '#removeLocation';
+
+// App Bar
+export const BUTTON_APPBAR_LOGOUT = '#logout';
+// Logout dialog
+export const BUTTON_DIALOG_LOGOUT = '#dialogLogout';

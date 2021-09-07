@@ -58,7 +58,7 @@ export default {
         { text: 'Latitud', value: 'position.lat', align: 'center', sortable: false},
         { text: 'Longitud', value: 'position.lng', align: 'center', sortable: false},
         { text: 'Fecha', value: 'date', align: 'center', sortable: true },
-        { text: 'Acciones', value: 'actions', align: 'center', sortable: false },
+        { text: 'Acciones', value: 'actions', align: 'center', sortable: false }
       ],
       markerToDelete: {}
     }

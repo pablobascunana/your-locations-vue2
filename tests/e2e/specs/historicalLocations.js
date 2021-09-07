@@ -1,7 +1,6 @@
 const login = require('../support/constants/login');
-const historicalLocations = require('../support/constants/historicalLocations');
 
-describe('Register Test', () => {
+describe('Historical Locations Test', () => {
 
   it('Do login', () => {
     cy.visit(login.ROUTE_LOGIN);

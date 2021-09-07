@@ -9,334 +9,158 @@ exports[`Register Should match snapshot 1`] = `
         <v-col xl="4" lg="4" md="6" sm="6" cols="12">
           <v-text-field id="userName" type="text" rules="(value) => {
           /* istanbul ignore next */
-          cov_1bs8gdva0b.f[1]++;
-          cov_1bs8gdva0b.s[2]++;
+          cov_2noyuabbov.f[1]++;
+          cov_2noyuabbov.s[2]++;
           return (
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[0][0]++, !!value) ||
+            (cov_2noyuabbov.b[0][0]++, !!value) ||
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[0][1]++, this.$t('validations.required'))
+            (cov_2noyuabbov.b[0][1]++, this.$t('validations.required'))
           );
         },(value) => {
           /* istanbul ignore next */
-          cov_1bs8gdva0b.f[2]++;
-          cov_1bs8gdva0b.s[3]++;
+          cov_2noyuabbov.f[2]++;
+          cov_2noyuabbov.s[3]++;
           return (
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[1][0]++, value.length < 101) ||
+            (cov_2noyuabbov.b[1][0]++, value.length < 101) ||
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[1][1]++, this.$t('validations.maxLength'))
+            (cov_2noyuabbov.b[1][1]++, this.$t('validations.maxLength'))
           );
         }" autocomplete="off"></v-text-field>
         </v-col>
         <v-col xl="4" lg="4" md="6" sm="6" cols="12">
           <v-text-field id="name" type="text" rules="(value) => {
           /* istanbul ignore next */
-          cov_1bs8gdva0b.f[1]++;
-          cov_1bs8gdva0b.s[2]++;
+          cov_2noyuabbov.f[1]++;
+          cov_2noyuabbov.s[2]++;
           return (
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[0][0]++, !!value) ||
+            (cov_2noyuabbov.b[0][0]++, !!value) ||
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[0][1]++, this.$t('validations.required'))
+            (cov_2noyuabbov.b[0][1]++, this.$t('validations.required'))
           );
         },(value) => {
           /* istanbul ignore next */
-          cov_1bs8gdva0b.f[2]++;
-          cov_1bs8gdva0b.s[3]++;
+          cov_2noyuabbov.f[2]++;
+          cov_2noyuabbov.s[3]++;
           return (
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[1][0]++, value.length < 101) ||
+            (cov_2noyuabbov.b[1][0]++, value.length < 101) ||
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[1][1]++, this.$t('validations.maxLength'))
+            (cov_2noyuabbov.b[1][1]++, this.$t('validations.maxLength'))
           );
         }" autocomplete="off"></v-text-field>
         </v-col>
         <v-col xl="4" lg="4" md="6" sm="6" cols="12">
           <v-text-field id="lastName" type="text" rules="(value) => {
           /* istanbul ignore next */
-          cov_1bs8gdva0b.f[1]++;
-          cov_1bs8gdva0b.s[2]++;
+          cov_2noyuabbov.f[1]++;
+          cov_2noyuabbov.s[2]++;
           return (
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[0][0]++, !!value) ||
+            (cov_2noyuabbov.b[0][0]++, !!value) ||
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[0][1]++, this.$t('validations.required'))
+            (cov_2noyuabbov.b[0][1]++, this.$t('validations.required'))
           );
         },(value) => {
           /* istanbul ignore next */
-          cov_1bs8gdva0b.f[2]++;
-          cov_1bs8gdva0b.s[3]++;
+          cov_2noyuabbov.f[2]++;
+          cov_2noyuabbov.s[3]++;
           return (
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[1][0]++, value.length < 101) ||
+            (cov_2noyuabbov.b[1][0]++, value.length < 101) ||
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[1][1]++, this.$t('validations.maxLength'))
+            (cov_2noyuabbov.b[1][1]++, this.$t('validations.maxLength'))
           );
         }" autocomplete="off"></v-text-field>
         </v-col>
         <v-col xl="4" lg="4" md="6" sm="6" cols="12">
           <v-text-field id="email" type="text" rules="(value) => {
           /* istanbul ignore next */
-          cov_1bs8gdva0b.f[1]++;
-          cov_1bs8gdva0b.s[2]++;
+          cov_2noyuabbov.f[1]++;
+          cov_2noyuabbov.s[2]++;
           return (
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[0][0]++, !!value) ||
+            (cov_2noyuabbov.b[0][0]++, !!value) ||
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[0][1]++, this.$t('validations.required'))
+            (cov_2noyuabbov.b[0][1]++, this.$t('validations.required'))
           );
         },(value) => {
           /* istanbul ignore next */
-          cov_1bs8gdva0b.f[3]++;
-          cov_1bs8gdva0b.s[4]++;
+          cov_2noyuabbov.f[3]++;
+          cov_2noyuabbov.s[4]++;
           return (
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[2][0]++, /(([^<>()[\\]\\\\.,;:\\s@&quot;]+(\\.[^<>()[\\]\\\\.,;:\\s@&quot;]+)*)|(&quot;.+&quot;))@(([[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$/.test(value)) ||
+            (cov_2noyuabbov.b[2][0]++, /(([^<>()[\\]\\\\.,;:\\s@&quot;]+(\\.[^<>()[\\]\\\\.,;:\\s@&quot;]+)*)|(&quot;.+&quot;))@(([[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$/.test(value)) ||
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[2][1]++, this.$t('validations.validEmail'))
+            (cov_2noyuabbov.b[2][1]++, this.$t('validations.validEmail'))
           );
         }" autocomplete="off"></v-text-field>
         </v-col>
         <v-col xl="4" lg="4" md="6" sm="6" cols="12">
           <v-text-field id="password" type="password" append-icon="mdi-eye-off" rules="(value) => {
           /* istanbul ignore next */
-          cov_1bs8gdva0b.f[1]++;
-          cov_1bs8gdva0b.s[2]++;
+          cov_2noyuabbov.f[1]++;
+          cov_2noyuabbov.s[2]++;
           return (
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[0][0]++, !!value) ||
+            (cov_2noyuabbov.b[0][0]++, !!value) ||
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[0][1]++, this.$t('validations.required'))
+            (cov_2noyuabbov.b[0][1]++, this.$t('validations.required'))
           );
         },(value) => {
           /* istanbul ignore next */
-          cov_1bs8gdva0b.f[5]++;
-          cov_1bs8gdva0b.s[6]++;
+          cov_2noyuabbov.f[5]++;
+          cov_2noyuabbov.s[6]++;
           return (
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[4][0]++, value == this.user.repeteadPassword) ||
+            (cov_2noyuabbov.b[4][0]++, value == this.user.repeteadPassword) ||
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[4][1]++, this.$t('validations.samePassword'))
+            (cov_2noyuabbov.b[4][1]++, this.$t('validations.samePassword'))
           );
         },(value) => {
           /* istanbul ignore next */
-          cov_1bs8gdva0b.f[2]++;
-          cov_1bs8gdva0b.s[3]++;
+          cov_2noyuabbov.f[2]++;
+          cov_2noyuabbov.s[3]++;
           return (
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[1][0]++, value.length < 101) ||
+            (cov_2noyuabbov.b[1][0]++, value.length < 101) ||
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[1][1]++, this.$t('validations.maxLength'))
+            (cov_2noyuabbov.b[1][1]++, this.$t('validations.maxLength'))
           );
         }" autocomplete="off"></v-text-field>
         </v-col>
         <v-col xl="4" lg="4" md="6" sm="6" cols="12">
           <v-text-field id="repeteadPassword" type="password" append-icon="mdi-eye-off" rules="(value) => {
           /* istanbul ignore next */
-          cov_1bs8gdva0b.f[1]++;
-          cov_1bs8gdva0b.s[2]++;
+          cov_2noyuabbov.f[1]++;
+          cov_2noyuabbov.s[2]++;
           return (
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[0][0]++, !!value) ||
+            (cov_2noyuabbov.b[0][0]++, !!value) ||
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[0][1]++, this.$t('validations.required'))
+            (cov_2noyuabbov.b[0][1]++, this.$t('validations.required'))
           );
         },(value) => {
           /* istanbul ignore next */
-          cov_1bs8gdva0b.f[4]++;
-          cov_1bs8gdva0b.s[5]++;
+          cov_2noyuabbov.f[4]++;
+          cov_2noyuabbov.s[5]++;
           return (
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[3][0]++, value == this.user.password) ||
+            (cov_2noyuabbov.b[3][0]++, value == this.user.password) ||
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[3][1]++, this.$t('validations.samePassword'))
+            (cov_2noyuabbov.b[3][1]++, this.$t('validations.samePassword'))
           );
         },(value) => {
           /* istanbul ignore next */
-          cov_1bs8gdva0b.f[2]++;
-          cov_1bs8gdva0b.s[3]++;
+          cov_2noyuabbov.f[2]++;
+          cov_2noyuabbov.s[3]++;
           return (
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[1][0]++, value.length < 101) ||
+            (cov_2noyuabbov.b[1][0]++, value.length < 101) ||
             /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[1][1]++, this.$t('validations.maxLength'))
-          );
-        }" autocomplete="off"></v-text-field>
-        </v-col>
-      </v-row>
-    </v-card-text>
-    <v-card-actions class="justify-end">
-      <v-btn id="back" elevation="0" text="">
-      </v-btn>
-      <v-btn id="register" color="primary" disabled="true" elevation="0">
-      </v-btn>
-    </v-card-actions>
-  </v-card>
-</v-form>
-`;
-
-exports[`Register should match snapshot 1`] = `
-<v-form>
-  <v-card elevation="10" rounded="0">
-    <v-card-title class="justify-center"></v-card-title>
-    <v-card-text class="pt-0 pb-2">
-      <v-row>
-        <v-col xl="4" lg="4" md="6" sm="6" cols="12">
-          <v-text-field id="userName" type="text" rules="(value) => {
-          /* istanbul ignore next */
-          cov_1bs8gdva0b.f[1]++;
-          cov_1bs8gdva0b.s[2]++;
-          return (
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[0][0]++, !!value) ||
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[0][1]++, this.$t('validations.required'))
-          );
-        },(value) => {
-          /* istanbul ignore next */
-          cov_1bs8gdva0b.f[2]++;
-          cov_1bs8gdva0b.s[3]++;
-          return (
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[1][0]++, value.length < 101) ||
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[1][1]++, this.$t('validations.maxLength'))
-          );
-        }" autocomplete="off"></v-text-field>
-        </v-col>
-        <v-col xl="4" lg="4" md="6" sm="6" cols="12">
-          <v-text-field id="name" type="text" rules="(value) => {
-          /* istanbul ignore next */
-          cov_1bs8gdva0b.f[1]++;
-          cov_1bs8gdva0b.s[2]++;
-          return (
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[0][0]++, !!value) ||
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[0][1]++, this.$t('validations.required'))
-          );
-        },(value) => {
-          /* istanbul ignore next */
-          cov_1bs8gdva0b.f[2]++;
-          cov_1bs8gdva0b.s[3]++;
-          return (
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[1][0]++, value.length < 101) ||
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[1][1]++, this.$t('validations.maxLength'))
-          );
-        }" autocomplete="off"></v-text-field>
-        </v-col>
-        <v-col xl="4" lg="4" md="6" sm="6" cols="12">
-          <v-text-field id="lastName" type="text" rules="(value) => {
-          /* istanbul ignore next */
-          cov_1bs8gdva0b.f[1]++;
-          cov_1bs8gdva0b.s[2]++;
-          return (
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[0][0]++, !!value) ||
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[0][1]++, this.$t('validations.required'))
-          );
-        },(value) => {
-          /* istanbul ignore next */
-          cov_1bs8gdva0b.f[2]++;
-          cov_1bs8gdva0b.s[3]++;
-          return (
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[1][0]++, value.length < 101) ||
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[1][1]++, this.$t('validations.maxLength'))
-          );
-        }" autocomplete="off"></v-text-field>
-        </v-col>
-        <v-col xl="4" lg="4" md="6" sm="6" cols="12">
-          <v-text-field id="email" type="text" rules="(value) => {
-          /* istanbul ignore next */
-          cov_1bs8gdva0b.f[1]++;
-          cov_1bs8gdva0b.s[2]++;
-          return (
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[0][0]++, !!value) ||
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[0][1]++, this.$t('validations.required'))
-          );
-        },(value) => {
-          /* istanbul ignore next */
-          cov_1bs8gdva0b.f[3]++;
-          cov_1bs8gdva0b.s[4]++;
-          return (
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[2][0]++, /(([^<>()[\\]\\\\.,;:\\s@&quot;]+(\\.[^<>()[\\]\\\\.,;:\\s@&quot;]+)*)|(&quot;.+&quot;))@(([[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$/.test(value)) ||
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[2][1]++, this.$t('validations.validEmail'))
-          );
-        }" autocomplete="off"></v-text-field>
-        </v-col>
-        <v-col xl="4" lg="4" md="6" sm="6" cols="12">
-          <v-text-field id="password" type="password" append-icon="mdi-eye-off" rules="(value) => {
-          /* istanbul ignore next */
-          cov_1bs8gdva0b.f[1]++;
-          cov_1bs8gdva0b.s[2]++;
-          return (
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[0][0]++, !!value) ||
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[0][1]++, this.$t('validations.required'))
-          );
-        },(value) => {
-          /* istanbul ignore next */
-          cov_1bs8gdva0b.f[5]++;
-          cov_1bs8gdva0b.s[6]++;
-          return (
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[4][0]++, value == this.user.repeteadPassword) ||
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[4][1]++, this.$t('validations.samePassword'))
-          );
-        },(value) => {
-          /* istanbul ignore next */
-          cov_1bs8gdva0b.f[2]++;
-          cov_1bs8gdva0b.s[3]++;
-          return (
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[1][0]++, value.length < 101) ||
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[1][1]++, this.$t('validations.maxLength'))
-          );
-        }" autocomplete="off"></v-text-field>
-        </v-col>
-        <v-col xl="4" lg="4" md="6" sm="6" cols="12">
-          <v-text-field id="repeteadPassword" type="password" append-icon="mdi-eye-off" rules="(value) => {
-          /* istanbul ignore next */
-          cov_1bs8gdva0b.f[1]++;
-          cov_1bs8gdva0b.s[2]++;
-          return (
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[0][0]++, !!value) ||
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[0][1]++, this.$t('validations.required'))
-          );
-        },(value) => {
-          /* istanbul ignore next */
-          cov_1bs8gdva0b.f[4]++;
-          cov_1bs8gdva0b.s[5]++;
-          return (
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[3][0]++, value == this.user.password) ||
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[3][1]++, this.$t('validations.samePassword'))
-          );
-        },(value) => {
-          /* istanbul ignore next */
-          cov_1bs8gdva0b.f[2]++;
-          cov_1bs8gdva0b.s[3]++;
-          return (
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[1][0]++, value.length < 101) ||
-            /* istanbul ignore next */
-            (cov_1bs8gdva0b.b[1][1]++, this.$t('validations.maxLength'))
+            (cov_2noyuabbov.b[1][1]++, this.$t('validations.maxLength'))
           );
         }" autocomplete="off"></v-text-field>
         </v-col>

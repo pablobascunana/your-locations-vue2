@@ -8,16 +8,12 @@ Cypress.Commands.add("fillLoginForm", (user) => {
 });
 
 Cypress.Commands.add("checkAppBarTitle", (user) => {
-    debugger
     cy.get(login.APP_BAR_TITLE).should('have.text', `Bienvenido ${user.userName}`);
 });
 
 Cypress.Commands.add("logout", () => {
     cy.get(login.BUTTON_LOGOUT).click();
-    cy.wait(500);
     cy.get(login.BUTTON_CLOSE_DIALOG).click();
-    cy.wait(500);
     cy.get(login.BUTTON_LOGOUT).click();
-    cy.wait(500);
     cy.get(login.BUTTON_LOGOUT_DIALOG).click({force: true});
 });

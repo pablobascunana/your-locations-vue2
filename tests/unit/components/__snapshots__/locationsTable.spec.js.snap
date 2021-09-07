@@ -8,16 +8,14 @@ exports[`Locations Table Should match snapshot 1`] = `
       <v-card-title>
 
         <v-spacer></v-spacer>
-        <v-icon aria-label="Close">mdi-close</v-icon>
+        <v-icon id="close" aria-label="Close">mdi-close</v-icon>
       </v-card-title>
       <v-card-text class="pt-0 pb-0 text-center">
         <p><span class="font-weight-bold"> </span>?</p>
       </v-card-text>
       <v-card-actions>
         <v-spacer></v-spacer>
-        <v-btn color="primary" text="">
-        </v-btn>
-        <v-btn color="red" text="">
+        <v-btn id="removeLocation" color="red" text="">
         </v-btn>
       </v-card-actions>
     </v-card>

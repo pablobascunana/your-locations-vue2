@@ -6,7 +6,7 @@
         <v-icon id="close" aria-label="Close" @click="closeDialog()">mdi-close</v-icon>
       </v-card-title>
       <v-card-text class="pt-0 pb-0">
-        <LocationsMap :markers="markers" :userUuid="userUuid"></LocationsMap>
+        <LocationsMap :markers="markers" :userUuid="userUuid" @updateMarkers="addMarkersHandler"></LocationsMap>
       </v-card-text>
       <v-card-actions>
         <v-spacer></v-spacer>
@@ -38,6 +38,9 @@ export default {
     ...mapState('application', ['addLocationDialogVisible'])
   },
   methods: {
+    addMarkersHandler(markers) {
+      this.$emit('updateMarkers', markers);
+    },
     closeDialog() {
       this.$store.commit('application/isAddLocationDialogVisible', false);
     }

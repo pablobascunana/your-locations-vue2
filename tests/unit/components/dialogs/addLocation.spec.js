@@ -7,6 +7,8 @@ import application from '@/store/modules/application.js'
 
 import AddLocation from '@/components/dialogs/AddLocation.vue'
 
+import * as historicalLocationsMock from '../../mocks/historicalLocations.mock.js'
+
 const localVue = createLocalVue();
 localVue.use(Vuex);
 let vuetify = new Vuetify();
@@ -40,10 +42,18 @@ describe('AddLocation', () => {
         expect(wrapper.isVueInstance()).toBe(true);
     });
 
+    it('Call to add markers handler function', () => {
+        const addMarkersHandlerFn = jest.spyOn(wrapper.vm, 'addMarkersHandler');
+        wrapper.vm.addMarkersHandler(historicalLocationsMock.MARKER);
+        expect(addMarkersHandlerFn).toBeCalled();
+        expect(wrapper.vm.$store.state.application.addLocationDialogVisible).toBe(false);
+    });
+
     it('Call to close dialog function', () => {
         const closeDialogFn = jest.spyOn(wrapper.vm, 'closeDialog');
         wrapper.vm.closeDialog();
         expect(closeDialogFn).toBeCalled();
         expect(wrapper.vm.$store.state.application.addLocationDialogVisible).toBe(false);
     });
+    
 });

@@ -5,9 +5,3 @@ exports[`App Should match snapshot 1`] = `
 
 </v-snackbar>
 `;
-
-exports[`App should match snapshot 1`] = `
-<v-snackbar top="true">
-
-</v-snackbar>
-`;

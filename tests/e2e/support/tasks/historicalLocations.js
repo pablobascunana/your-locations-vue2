@@ -33,3 +33,8 @@ Cypress.Commands.add("removeLocation", () => {
   cy.get(historicalLocations.BUTTON_DELETE_LOCATION).click({ force: true });
   cy.get(historicalLocations.BUTTON_REMOVE_LOCATION).click({ force: true });
 });
+
+Cypress.Commands.add("logout", () => {
+  cy.get(historicalLocations.BUTTON_APPBAR_LOGOUT).click();
+  cy.get(historicalLocations.BUTTON_DIALOG_LOGOUT).click({force: true});
+});

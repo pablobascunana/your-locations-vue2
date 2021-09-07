@@ -61,9 +61,16 @@ describe('Historical locations', () => {
     });
 
     it('Call to update markers handler function', () => {
-        const updateMarkersHandlerFn = jest.spyOn(wrapper.vm, 'updateMarkersHandler');
-        wrapper.vm.updateMarkersHandler(historicalLocationsMock.MARKER);
-        expect(updateMarkersHandlerFn).toBeCalled();
-        expect(wrapper.vm.markers).toStrictEqual(historicalLocationsMock.MARKER)
+        const removeMarkersHandlerFn = jest.spyOn(wrapper.vm, 'removeMarkersHandler');
+        wrapper.vm.removeMarkersHandler(historicalLocationsMock.MARKER);
+        expect(removeMarkersHandlerFn).toBeCalled();
+        expect(wrapper.vm.markers).toStrictEqual(historicalLocationsMock.MARKER);
+    });
+
+    it('Call to update markers handler function', () => {
+        const addMarkersHandlerFn = jest.spyOn(wrapper.vm, 'addMarkersHandler');
+        wrapper.vm.addMarkersHandler(historicalLocationsMock.MARKER);
+        expect(addMarkersHandlerFn).toBeCalled();
+        expect(wrapper.vm.markers).toStrictEqual(historicalLocationsMock.MARKER);
     });
 });
