@@ -1,7 +1,7 @@
 # Locations VueJS
 
-Save your locations visited in a map using VueJS version 2.x and Vuetify. This project consumes this 
-[repository](https://github.com/pablobascunana/locations-flask-mongo). The content of this project 
+Save your locations visited in a map using [VueJS version 2.x](https://vuejs.org/) and [Vuetify](https://vuetifyjs.com/en/). 
+This project consumes this [repository](https://github.com/pablobascunana/locations-flask-mongo). The content of this project 
 is only for educational purposes.
 
 ## How to run this project
