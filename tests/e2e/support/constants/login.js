@@ -10,7 +10,6 @@ export const ROUTE_LOGIN = "/";
 
 export const URL_LOGIN = "/api/v1/login";
 
-
 // AppBar and Logout
 export const BUTTON_LOGOUT = "#logout";
 
