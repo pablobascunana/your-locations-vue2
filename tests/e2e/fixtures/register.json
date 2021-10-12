@@ -1,0 +1,10 @@
+{
+    "user": {
+        "userName": "test",
+        "name": "Pepe",
+        "lastName": "Lopez Martínez",
+        "email": "unemail@unemail.com",
+        "password": "superSecret",
+        "repeteadPassword": "superSecret"
+    }
+}

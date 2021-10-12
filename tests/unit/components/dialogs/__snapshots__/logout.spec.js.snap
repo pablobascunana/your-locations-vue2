@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logout Should match snapshot 1`] = `
+<v-dialog max-width="500px">
+  <v-card>
+    <v-card-title>
+
+      <v-spacer></v-spacer>
+      <v-icon id="close" aria-label="Close">mdi-close</v-icon>
+    </v-card-title>
+    <v-card-text class="text-center mt-10">
+      <p></p>
+    </v-card-text>
+    <v-card-actions>
+      <v-spacer></v-spacer>
+      <v-btn id="dialogLogout" color="primary" text="">
+      </v-btn>
+    </v-card-actions>
+  </v-card>
+</v-dialog>
+`;

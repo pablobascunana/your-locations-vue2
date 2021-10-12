@@ -1,0 +1,66 @@
+{
+  "appBar": {
+    "welcome": "Welcome"
+  },
+  "register": {
+    "title": "Sign in",
+    "userName": "Username *",
+    "name": "Name *",
+    "lastName": "Lastname *",
+    "email": "Email *",
+    "password": "Password *",
+    "repeteadPassword": "Repeat password *",
+    "messages": {
+      "success1": "The user",
+      "success2": "has been registered",
+      "error": "An error occurred while registering the user",
+      "userNameError": "The username",
+      "emailError": "The email",
+      "exists": "already exists"
+    }
+  },
+  "login": {
+    "title": "Welcome",
+    "username": "Username",
+    "password": "Password",
+    "loginBtn": "Log in",
+    "error": {
+      "credentials": "Invalid credentials",
+      "generic": "An error occurred while trying to log in"
+    }
+  },
+  "locations": {
+    "tableTitle": "Your locations",
+    "title": "Search and add a location",
+    "delete": "Delete location",
+    "confirmMessage": "Are you sure to delete the location",
+    "success": {
+      "save": "Location has been saved",
+      "delete": "Location has been removed"
+    },
+    "error": {
+      "deleteGeneric": "An error occurred while deleting the location",
+      "getGeneric": "An error occurred while getting the locations",
+      "saveGeneric": "An error occurred while saving the location"
+    }
+  },
+  "logout": {
+    "title": "Exit application",
+    "message": "¿Are you sure do you want to log out?"
+  },
+  "validations": {
+    "required": "Required",
+    "maxLength": "Maximum required size 100 characters",
+    "validEmail": "Invalid email address",
+    "samePassword": "The passwords are not the same"
+  },
+  "generic": {
+    "buttons": {
+      "add": "Add",
+      "back": "Back",
+      "delete": "Delete",
+      "exit": "Exit",
+      "register": "Sign in"
+    }
+  }
+}
