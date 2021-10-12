@@ -1,7 +1,23 @@
 {
   "name": "mylocations-mongodb",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "Save and add locations in a map",
+  "main": "./src/main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pablobascunana/locations-vue2.git"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "tailwindcss",
+    "jest",
+    "cypress"
+  ],
+  "author": "Pablo Bascuñana Saiz <https://github.com/pablobascunana> (https://github.com/pablobascunana)",
+  "license": "MIT",
+  "bugs": "https://github.com/pablobascunana/locations-vue2/issues",
+  "homepage": "https://github.com/pablobascunana/locations-vue2",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
