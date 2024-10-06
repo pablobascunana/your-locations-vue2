@@ -79,7 +79,7 @@ export default {
       this.$router.push({ name: 'locations' });
     },
     goToRegister() {
-      this.$router.push({ name: 'register' })
+      this.$router.push({ name: 'register' });
     },
     checkWhatErrorIs(status) {
       if (status === 401 || status === 404) {
